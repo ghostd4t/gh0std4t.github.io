@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gh0std4t</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="assets/img/skull.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="body">
+<header class="header-menu">
+    <div class="div navigation-container" style="">
+        <div class="navigation">
+            <div class="div_grid">
+                <nav class="main-nav-Accordion">
+                    <ul class="list-main-items">
+                        <li class="list-item" data-slug="/blog/"><a class="anchor" href="Index.html">Home</a>
+                        </li>
+                        <li class="list-item" data-slug="/blog/"><a class="anchor" href="https://github.com/ghostd4t">Projects</a>
+                        </li>
+                        <li class="list-item" data-slug="/stats/"><a class="anchor" href="https://www.donationalerts.com/r/ghost_d4t">Donate</a>
+                        </li>
+                        <li class="list-item" data-slug="/stats/"><a class="anchor" href="contact.html">Contact me</a>
+                        </li>
+                        <a href="https://t.me/gh0st_in_shell" class="button-85">
+                            <img src="assets/img/tg_icon.png" alt="Icon" class="button-icon">
+                            <span class="button-text">Telegram</span>  
+                        <a>
+                        
+                    </div>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container-title">
+        <h1 class="intro_title"> Aleksandr "Gh0std4t" Busygin </h1>
+        <h2 class="intro_slogan"> Python developer </h2>
+    </div>
+</div>
+</div>
+<div class="main_container">
+    <div class="container_quick">
+        <h1> About me:</h1>
+    </div>
+    <div class="quick_start">
+        <a href="#section-lfg-launchpad" class="quick_start_item" onclick="changeContent('skills')">Skills</a>
+        <a href="#section-research" class="quick_start_item" onclick="changeContent('experience')">Experience</a>
+        <a href="#section-governance" class="quick_start_item" onclick="changeContent('inPerson')">In person</a>
+    </div>
+    <div class="content_container" id="contentContainer">
+    </div>
+    <script>
+        function changeContent(section) {
+            const contentContainer = document.getElementById('contentContainer');
+            let content = '';
+
+            switch (section) {
+                case 'skills':
+                    content = '<h1 class="header_bio">My stack</h1><h2>Python:</h2>\
+                    <p>Django, Flask, NumPy, Pandas, SQLAlchemy, OpenCV, DiscrodAPI, Telebot</p>\
+                    <h2>DB:</h2><p>MySQL, SQLite, PostgreSQL</p><h2>Web:</h2><p>React, NodeJS</p><h2>DevOps:</h2>\
+                    <p>Git, Docker, Jira, Postman, Kubernetes</p>';
+
+                    break;
+                case 'experience':
+                    content = '<div class="exp"><div class="exp_cont">\
+                        <h1 class="header_bio">Previous employments</h1><h2>1) ИЭМЗ КУПОЛ - technic</h2>\
+                    <p>• Разработал приложение для обработки данных сотрудников, \
+                        что позволило автоматизировать учет рабочего времени и повысить эффективность HR-отдела на 20%.</p>\
+                    <p>• Оптимизировал процессы сбора и анализа данных, сократив время обработки на 30%</p>\
+                    <p>• Технологии: Python, Flask, SQLite, Django.</p>\
+                    <h2>2) ZALA AERO - technic</h2><p>• Оптимизировал систему компьютерного зрения с функцией распознавания объектов, \
+                        повысив точность на 15% и сократив время обработки на 25%.</p>\
+                    <p>• Внедрил новые алгоритмы обработки изображений, улучшив производительность системы на 10%.</p>\
+                    <p>• Технологии: С++, OpenCV</p>\
+                    </div><div class="study">\
+                    <h1 class="header_bio">Образование:</h1>\
+                    <h2>МГТУ им. Н.Э. Баумана</h2>\
+                    <p>ИУ1, Системы управления летательными аппаратами</p>\
+                    <h2>Цифровая кафедра</h2>\
+                    <p>МГТУ им Н. Э. Баумана, Иннополис, ML разработчик Python</p>\
+                    </div></div>';
+                    
+                    break;
+                case 'inPerson':
+                    content = '<div class="bio_container"><img src="assets/img/me.jpg" class="avatar">\
+                    <div class="bio_text">\
+                        <h1 class="header_bio">03.02.2004 - Aquarius</h1>\
+                        <p>I love coding and solving hard tasks</p>\
+                        <h2>Sports fan: karate, boxing, swimming, chess</h2>\
+                        <h2>Smooky bot SEO</h2>\
+                        <p>Eager to share my expirence and get new</p>\
+                    </div>\
+                  </div>';
+                    break;
+                default:
+                    content = '';
+            }
+
+            contentContainer.innerHTML = content;
+        }
+    </script>
+</div>
+</body>
+</html>
