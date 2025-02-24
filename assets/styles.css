@@ -60,8 +60,8 @@ html, body{
     cursor: pointer;
     position: relative;
     z-index: 0;
-    width: 200px;
-    border-radius: 4px;
+    width: 130px;
+    border-radius: 8px;
     min-height: 35px;
     font-family: Oswald,sans-serif;
     font-weight: bolder;
@@ -76,7 +76,7 @@ html, body{
     scroll-behavior: smooth;
     text-decoration: none;
     white-space: nowrap;
-    margin-left: 15PX;
+    margin-left: 10PX;
 }
 .anchor:hover{
   
@@ -97,7 +97,7 @@ html, body{
 li{
     border: #1e2022;
     border-width: 10px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .button-c{
@@ -124,7 +124,7 @@ li{
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 4px;
+    border-radius: 8px;
     min-height: 50px;
     width: 220px;
     font-family: Oswald,sans-serif;
@@ -155,7 +155,7 @@ li{
     align-items: center;
 
     z-index: 0;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: Oswald,sans-serif;
     font-weight: bolder;
     user-select: none;
@@ -185,7 +185,7 @@ li{
     width: calc(100% + 3px);
     height: calc(100% + 3px);
     animation: glowing-button-85 20s linear infinite;
-    border-radius: 4px;
+    border-radius: 8px;
   }
   
   @keyframes glowing-button-85 {
@@ -210,7 +210,7 @@ li{
     background: #4CAF50;
     left: 0;
     top: 0;
-    border-radius: 4px;
+    border-radius: 8px;
   }  
 
 .button-icon {
@@ -265,7 +265,7 @@ li{
     color: #a59f99;
     padding: .75rem;
     background-color: #131515;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 2px solid transparent;
     background-color: #1e1e1e;
     font-family: Oswald, sans-serif;
@@ -292,7 +292,7 @@ li{
 .content_container {
     margin-top: 20px;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     align-items: center;
     color: #d1cec8;
     transition: all .3s;
